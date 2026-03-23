@@ -24,3 +24,4 @@ Use the text below in **Privacy practices → Permission justifications** (or th
 
 - Character limits: if a field is truncated, shorten slightly while keeping the meaning.
 - **Single purpose**: describe the extension as replacing the new tab with a calm scene, optional Google search, apps launcher, and top sites—no unrelated features.
+

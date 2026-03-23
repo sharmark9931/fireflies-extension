@@ -2,17 +2,15 @@
 
 **Night Field & Fireflies** — Chrome extension. Replaces the **new tab** page with the grass field scene: swaying grass and creatures that rest in the grass until you move the pointer over the field—then nearby ones drift upward and fade toward the sky.
 
-<p align="center">
-  <img src="assets/readme-preview.jpg" alt="Night Field & Fireflies — new tab preview with search, top sites, and fireflies" width="800" />
-</p>
+![Demo Video](assets/demo.gif)
 
 ## Privacy & Chrome Web Store
 
 - **[Privacy policy](PRIVACY.md)** — public URL for Chrome (works without Pages):  
-  **https://github.com/sharmark9931/fireflies-extension/blob/main/PRIVACY.md**
+**[https://github.com/sharmark9931/fireflies-extension/blob/main/PRIVACY.md](https://github.com/sharmark9931/fireflies-extension/blob/main/PRIVACY.md)**
 - **[Permission justifications](PERMISSIONS.md)** — copy-paste text for `tabs` and `topSites`
 - **HTML privacy page** (after you turn on GitHub Pages — see below):  
-  **https://sharmark9931.github.io/fireflies-extension/privacy-policy.html**
+**[https://sharmark9931.github.io/fireflies-extension/privacy-policy.html](https://sharmark9931.github.io/fireflies-extension/privacy-policy.html)**
 
 ### Enable GitHub Pages (fixes 404 on the HTML URL)
 
@@ -20,11 +18,11 @@ The site **is not live until** you enable Pages on the repo (one-time):
 
 **Option A — simplest (branch + `/docs`)**
 
-1. Open **https://github.com/sharmark9931/fireflies-extension/settings/pages**
+1. Open **[https://github.com/sharmark9931/fireflies-extension/settings/pages](https://github.com/sharmark9931/fireflies-extension/settings/pages)**
 2. Under **Build and deployment** → **Source**, choose **Deploy from a branch**
 3. Branch: **main** → Folder: **/docs** → **Save**
-4. Wait ~1 minute, then open  
-   **https://sharmark9931.github.io/fireflies-extension/privacy-policy.html**
+4. Wait ~1 minute, then open
+  **[https://sharmark9931.github.io/fireflies-extension/privacy-policy.html](https://sharmark9931.github.io/fireflies-extension/privacy-policy.html)**
 
 **Option B — GitHub Actions** (uses `.github/workflows/pages.yml`)
 
@@ -44,12 +42,14 @@ Until Pages is enabled, use the **blob** link to `PRIVACY.md` above for the Chro
 
 ## Dark vs light (system UI theme)
 
-The page follows **`prefers-color-scheme`** (your OS/browser light or dark setting):
+The page follows `**prefers-color-scheme`** (your OS/browser light or dark setting):
 
-| Theme | Look | Creatures |
-|--------|------|-----------|
-| **Dark** | Night field, stars, cool sky glow | **Fireflies** (soft green glow) |
-| **Light** | Day field, warm sun-like sky | **Butterflies** (small to large, wing flap; same hover → fly → fade behavior) |
+
+| Theme     | Look                              | Creatures                                                                     |
+| --------- | --------------------------------- | ----------------------------------------------------------------------------- |
+| **Dark**  | Night field, stars, cool sky glow | **Fireflies** (soft green glow)                                               |
+| **Light** | Day field, warm sun-like sky      | **Butterflies** (small to large, wing flap; same hover → fly → fade behavior) |
+
 
 Changing the system or browser theme updates the new tab automatically.
 
@@ -66,7 +66,7 @@ The **top-right** **nine-dot** button opens a launcher with Google services (Sea
 
 - **Google Search** — Centered logo and search box; submits to Google (`GET` `https://www.google.com/search?q=…`) in the **current tab**.
 - **Top sites** — A **Mac-style** pill tray at the bottom lists **Chrome most-visited** sites (`chrome.topSites`), with favicons. Up to 12 entries.
-- **Toggles** (bottom center) — **Search** and **Top sites** switch each section on or off. Choices are saved in **`localStorage`** (`ntp_showSearch`, `ntp_showTopSites`).
+- **Toggles** (bottom center) — **Search** and **Top sites** switch each section on or off. Choices are saved in `**localStorage`** (`ntp_showSearch`, `ntp_showTopSites`).
 
 Reload the extension on `chrome://extensions` after updates.
 
@@ -79,3 +79,4 @@ Reload the extension on `chrome://extensions` after updates.
 - `ntp-ui.js` — Search hub, top sites dock, toggles, `localStorage`
 - `scene.js` — Theme detection, creatures, grass rustle
 - `assets/field.png` — Base field photograph (replace to customize)
+
