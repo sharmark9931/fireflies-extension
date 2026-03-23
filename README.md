@@ -4,10 +4,32 @@
 
 ## Privacy & Chrome Web Store
 
-- **[Privacy policy](PRIVACY.md)** (Markdown on GitHub — use this public URL on the Chrome Developer Dashboard)
+- **[Privacy policy](PRIVACY.md)** — public URL for Chrome (works without Pages):  
+  **https://github.com/sharmark9931/fireflies-extension/blob/main/PRIVACY.md**
 - **[Permission justifications](PERMISSIONS.md)** — copy-paste text for `tabs` and `topSites`
-- **HTML privacy page** (optional): enable GitHub Pages with source `/docs` on `main`, then use  
-  `https://sharmark9931.github.io/fireflies-extension/privacy-policy.html`
+- **HTML privacy page** (after you turn on GitHub Pages — see below):  
+  **https://sharmark9931.github.io/fireflies-extension/privacy-policy.html**
+
+### Enable GitHub Pages (fixes 404 on the HTML URL)
+
+The site **is not live until** you enable Pages on the repo (one-time):
+
+**Option A — simplest (branch + `/docs`)**
+
+1. Open **https://github.com/sharmark9931/fireflies-extension/settings/pages**
+2. Under **Build and deployment** → **Source**, choose **Deploy from a branch**
+3. Branch: **main** → Folder: **/docs** → **Save**
+4. Wait ~1 minute, then open  
+   **https://sharmark9931.github.io/fireflies-extension/privacy-policy.html**
+
+**Option B — GitHub Actions** (uses `.github/workflows/pages.yml`)
+
+1. Same **Settings → Pages**
+2. **Source** → **GitHub Actions**
+3. Accept the suggested “Deploy static content” / Pages workflow if prompted, or use the workflow already in this repo
+4. Push to `main` or run **Actions → Deploy GitHub Pages → Run workflow**
+
+Until Pages is enabled, use the **blob** link to `PRIVACY.md` above for the Chrome listing.
 
 ## Install (load unpacked)
 
