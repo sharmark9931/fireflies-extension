@@ -2,6 +2,10 @@
 
 **Night Field & Fireflies** — Chrome extension. Replaces the **new tab** page with the grass field scene: swaying grass and creatures that rest in the grass until you move the pointer over the field—then nearby ones drift upward and fade toward the sky.
 
+<p align="center">
+  <img src="assets/readme-preview.jpg" alt="Night Field & Fireflies — new tab preview with search, top sites, and fireflies" width="800" />
+</p>
+
 ## Privacy & Chrome Web Store
 
 - **[Privacy policy](PRIVACY.md)** — public URL for Chrome (works without Pages):  
