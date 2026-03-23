@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Night Field &amp; Fireflies</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="ntp-topbar" role="banner">
+      <div class="ntp-topbar-spacer"></div>
+      <div class="ntp-topbar-actions">
+        <div class="ntp-menu-wrap">
+          <button
+            type="button"
+            class="ntp-icon-btn"
+            id="btnApps"
+            aria-label="Google apps"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-controls="appsPanel"
+          >
+            <svg class="ntp-dots-9" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="6" cy="6" r="2" fill="currentColor" />
+              <circle cx="12" cy="6" r="2" fill="currentColor" />
+              <circle cx="18" cy="6" r="2" fill="currentColor" />
+              <circle cx="6" cy="12" r="2" fill="currentColor" />
+              <circle cx="12" cy="12" r="2" fill="currentColor" />
+              <circle cx="18" cy="12" r="2" fill="currentColor" />
+              <circle cx="6" cy="18" r="2" fill="currentColor" />
+              <circle cx="12" cy="18" r="2" fill="currentColor" />
+              <circle cx="18" cy="18" r="2" fill="currentColor" />
+            </svg>
+          </button>
+          <div
+            class="ntp-dropdown ntp-apps-panel"
+            id="appsPanel"
+            role="dialog"
+            aria-label="Google apps"
+            hidden
+          >
+            <p class="ntp-dropdown-title">Google apps</p>
+            <ul class="ntp-apps-grid">
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://www.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Search</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://www.youtube.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/youtube_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">YouTube</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://mail.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/gmail_2020q4_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Gmail</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://maps.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/maps_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Maps</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://drive.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/drive_2020q4_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Drive</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://calendar.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/calendar_2020q4_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Calendar</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://photos.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/photos_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Photos</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://docs.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/docs_2020q4_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Docs</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://sheets.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/sheets_2020q4_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Sheets</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://slides.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/slides_2020q4_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Slides</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://meet.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/meet_2020q4_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Meet</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://chat.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/chat_2020q4_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Chat</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://contacts.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/contacts_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Contacts</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://keep.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Keep</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://sites.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/sites_2020q4_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Sites</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://docs.google.com/forms/">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/forms_2020q4_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Forms</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="ntp-app-tile" data-open-url="https://classroom.google.com">
+                  <span class="ntp-app-icon" aria-hidden="true"
+                    ><img
+                      class="ntp-app-icon-img"
+                      src="https://www.gstatic.com/images/branding/product/1x/classroom_48dp.png"
+                      alt=""
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                  /></span>
+                  <span class="ntp-app-label">Google Classroom</span>
+                </button>
+              </li>
+            </ul>
+            <button type="button" class="ntp-dropdown-footer" data-open-url="https://about.google/products/">
+              More from Google
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="scene" id="scene">
+      <div class="sky-glow" aria-hidden="true"></div>
+      <div class="field-bg" role="img" aria-label="Grass field"></div>
+      <div class="atmosphere-veil" aria-hidden="true"></div>
+      <div class="stars" id="stars" aria-hidden="true"></div>
+      <div class="grass-layer" id="grassLayer" aria-hidden="true"></div>
+      <canvas id="fireflyCanvas" aria-hidden="true"></canvas>
+    </div>
+
+    <div class="ntp-overlay-ui" aria-hidden="false">
+      <div class="ntp-search-hub" id="searchHub">
+        <a
+          class="ntp-google-logo-link"
+          href="https://www.google.com"
+          rel="noopener noreferrer"
+          aria-label="Google"
+        >
+          <img
+            class="ntp-google-logo"
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            width="204"
+            height="69"
+            alt="Google"
+          />
+        </a>
+        <form
+          class="ntp-search-form"
+          id="googleSearchForm"
+          action="https://www.google.com/search"
+          method="get"
+          role="search"
+        >
+          <div class="ntp-search-inner">
+            <svg class="ntp-search-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+            </svg>
+            <input
+              class="ntp-search-input"
+              type="search"
+              name="q"
+              id="ntpSearchInput"
+              placeholder="Search Google or type a URL"
+              autocomplete="off"
+              autocorrect="off"
+              spellcheck="false"
+              maxlength="2048"
+              required
+              aria-label="Search Google"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="ntp-bottom-hub">
+        <div class="ntp-dock-wrap" id="topSitesDockWrap">
+          <nav class="ntp-dock" id="topSitesDock" aria-label="Frequently visited sites"></nav>
+        </div>
+        <div class="ntp-toggle-row" role="group" aria-label="Show or hide panels">
+          <button type="button" class="ntp-toggle ntp-toggle--on" id="toggleSearch" aria-pressed="true">
+            <span class="ntp-toggle-track" aria-hidden="true"></span>
+            <span class="ntp-toggle-label">Search</span>
+          </button>
+          <button type="button" class="ntp-toggle ntp-toggle--on" id="toggleDock" aria-pressed="true">
+            <span class="ntp-toggle-track" aria-hidden="true"></span>
+            <span class="ntp-toggle-label">Top sites</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="topbar.js" defer></script>
+    <script src="ntp-ui.js" defer></script>
+    <script src="scene.js" type="module"></script>
+  </body>
+</html>

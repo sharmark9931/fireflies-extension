@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Night Field & Fireflies",
+  "version": "1.0.0",
+  "description": "A calm night field with fireflies that rise from the grass when you hover.",
+  "permissions": ["tabs", "topSites"],
+  "icons": {
+    "16": "assets/extension-logo.png",
+    "32": "assets/extension-logo.png",
+    "48": "assets/extension-logo.png",
+    "128": "assets/extension-logo.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "assets/extension-logo.png",
+      "32": "assets/extension-logo.png",
+      "48": "assets/extension-logo.png",
+      "128": "assets/extension-logo.png"
+    },
+    "default_title": "Night Field & Fireflies"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
