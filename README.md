@@ -58,13 +58,13 @@ Changing the system or browser theme updates the new tab automatically.
 - **Grass**: Same blade layer in both themes (colors adjust). Blades sway in idle mode and lean smoothly when the pointer moves over the grass.
 - **Creatures**: Many idle fireflies / butterflies (~1280), **biased toward the lower grass** so the field feels fuller near the ground. With the pointer over the grass, creatures within ~160px launch upward with smooth paths; brightness fades slowly as they rise. They respawn in the grass after disappearing.
 
-## Top bar (Google apps)
+## Top bar (Apps launcher)
 
-The **top-right** **nine-dot** button opens a launcher with Google services (Search, YouTube, Gmail, Maps, Drive, Calendar, Photos, Docs, Sheets, Slides, Meet, Chat, Contacts, Keep, Sites, Forms, Classroom). Icons load from **Google’s favicon service** and **gstatic** product artwork. Each shortcut opens in a **new tab**.
+The **top-right** menu opens a **shortcuts panel** with links to common web apps. Each shortcut opens in a **new tab**. Icons are standard web artwork loaded from public URLs as needed.
 
 ## Center search & bottom dock
 
-- **Google Search** — Centered logo and search box; submits to Google (`GET` `https://www.google.com/search?q=…`) in the **current tab**.
+- **Search box** — Centered logo and field; submits your query via the usual search URL in the **current tab**.
 - **Top sites** — A **Mac-style** pill tray at the bottom lists **Chrome most-visited** sites (`chrome.topSites`), with favicons. Up to 12 entries.
 - **Toggles** (bottom center) — **Search** and **Top sites** switch each section on or off. Choices are saved in `**localStorage`** (`ntp_showSearch`, `ntp_showTopSites`).
 
